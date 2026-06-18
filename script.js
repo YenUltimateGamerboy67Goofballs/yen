@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startScreen.addEventListener('click', startExperience);
 
     // --- TYPEWRITER LOGIK ---
-    const nameStr = "xaaaxaa";
+    const nameStr = "xaaaxa";
     let nameIndex = 0;
     function typeWriterName() {
         if (nameIndex <= nameStr.length) {
