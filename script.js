@@ -5,8 +5,8 @@ function initMedia() {
     const backgroundVideo = document.getElementById('background');
     if (!backgroundMusic || !backgroundVideo) return;
     
-    backgroundMusic.volume = 0.3;
-    backgroundVideo.muted = true; 
+    backgroundVideo.muted = false;
+    backgroundVideo.volume = 0.3;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
