@@ -667,7 +667,7 @@
     </div>
 
     <div class="container">
-        <video id="background" autoplay loop muted playsinline>
+        <video id="background" loop muted playsinline>
             <source src="https://i.imgur.com/8jRW6rh.mp4" type="video/mp4">
         </video>
 
@@ -798,10 +798,9 @@
         </div>
     </div>
 
-    
+    <audio id="background-music" loop><source src="assets/background_music.mp3" type="audio/mp3"></audio>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
-        // Check if device is mobile or desktop
         function isMobile() {
             return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
         }
@@ -812,7 +811,6 @@
             document.body.classList.add('desktop-device');
         }
 
-        // Existing touch device check
         if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
             document.body.classList.add('touch-device');
         }
